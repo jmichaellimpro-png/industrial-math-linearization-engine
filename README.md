@@ -1,5 +1,10 @@
 # industrial-math-linearization-engine
 This repository refactors legacy, hardcoded conditional logic (500+ lines of nested if/else statements or static lookup tables) into a vectorized linear interpolation and scale-factor adjustment engine using NumPy
+Here is the complete setup for **`dynamic-linear-interpolation-schema`**.
+
+This repository refactors legacy, hardcoded conditional logic (500+ lines of nested `if/else` statements or static lookup tables) into a vectorized linear interpolation and scale-factor adjustment engine using `NumPy`.
+
+
 # Dynamic Linear Interpolation Schema
 
 A lightweight, high-performance mathematical engine designed to replace 500+ lines of legacy, hardcoded conditional scripts with vectorized linear interpolation (`NumPy`) and dynamic scale-factor adjustment routines.
@@ -29,15 +34,25 @@ dynamic-linear-interpolation-schema/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
-''''''
-Quickstart
-Installation
-Bash
+
+```
+
+---
+
+## Quickstart
+
+### Installation
+
+```bash
 git clone [https://github.com/your-username/dynamic-linear-interpolation-schema.git](https://github.com/your-username/dynamic-linear-interpolation-schema.git)
 cd dynamic-linear-interpolation-schema
 pip install -r requirements.txt
-Basic Usage
-Python
+
+```
+
+### Basic Usage
+
+```python
 from src.equation_schema import LinearScaleEngine
 
 # Define calibration points [(x0, y0), (x1, y1), ...]
@@ -54,10 +69,26 @@ print(f"Calculated Value: {output_val}")
 raw_dataset = [2.0, 4.0, 6.0, 8.0, 12.0]
 scaled_dataset = engine.calculate_batch(raw_dataset)
 print(f"Scaled Dataset: {scaled_dataset}")
-Testing
-Run unit tests via unittest or pytest:
 
-Bash
+```
+
+---
+
+## Testing
+
+Run unit tests via `unittest` or `pytest`:
+
+```bash
 python -m unittest discover -s tests
-License
+
+```
+
+---
+
+## License
+
 MIT License. Free for open reuse and adaptation.
+
+```
+
+```
